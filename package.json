@@ -2,6 +2,7 @@
   "name": "chennai-tourism",
   "version": "1.0.0",
   "description": "An attractive and user-friendly website showcasing amazing places to visit in Chennai",
+  "homepage": "https://tarun7explorer.github.io/Chennai-Tourism",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
@@ -12,6 +13,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "npm run build && gh-pages -d build",
+    "predeploy": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -33,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "gh-pages": "^5.0.0"
   }
 }
